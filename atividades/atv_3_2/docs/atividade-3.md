@@ -10,7 +10,8 @@ Alunos: Guilherme Bento Ramos (185226) e Breno Porto Pinheiro do Prado (185196).
 
 | Arquivo | Papel |
 | --- | --- |
-| `atividade_3_metodos_numericos.ipynb` | Notebook Colab com implementações, testes, tabela, análise e células que geram/exibem os GIFs. |
+| `resolucao.ipynb` | Notebook Colab com implementações, testes, tabela, análise, células que geram/exibem os GIFs e atalho “Open in Colab”. |
+| `dashboard_mathcha.md` | Conteúdo pronto para copiar e colar no dashboard do Mathcha, com tabela, links e espaços para os GIFs. |
 | `animacao_bissecao_f1.gif` | Animação gerada do intervalo da bisseção para `f1`. |
 | `animacao_newton_f2.gif` | Animação gerada das tangentes de Newton para `f2`. |
 | `animacao_secante_f3.gif` | Animação gerada das secantes para `f3`. |
@@ -18,6 +19,6 @@ Alunos: Guilherme Bento Ramos (185226) e Breno Porto Pinheiro do Prado (185196).
 
 ## Execução e comportamento
 
-Abra `atividade_3_metodos_numericos.ipynb` no Colab ou execute-o com um kernel Python 3 após instalar `pip install -r requirements.txt`. Execute todas as células em ordem. O notebook usa tolerância `1e-6`, no máximo 100 iterações e retorna histórico, estado de convergência e motivo de falha para cada método. A célula final de animações recria os três GIFs no diretório atual.
+Abra [`resolucao.ipynb`](../resolucao.ipynb) pelo atalho “Open in Colab” no topo ou execute-o com um kernel Python 3 após instalar `pip install -r requirements.txt`. Execute todas as células em ordem. O notebook usa tolerância `1e-6`, no máximo 100 iterações e retorna histórico, estado de convergência e motivo de falha para cada método. A célula final de animações recria os três GIFs no diretório atual. Para a entrega no Mathcha, copie o conteúdo de [`dashboard_mathcha.md`](../dashboard_mathcha.md), anexe os GIFs e mantenha os links alternativos aos arquivos.
 
 Os métodos detectam intervalo sem troca de sinal (bisseção), derivada próxima de zero (Newton), denominador próximo de zero (secante), valores não finitos e limite de iterações. A convergência só é declarada quando o resíduo é menor que a tolerância; tamanho de passo pequeno não basta. Não há serviços externos nem dados persistentes.
